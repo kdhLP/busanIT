@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input 응용</title>
+  </head>
+  <body>
+    <div>
+      <fieldset>
+        <legend>이름 양식</legend>
+        <form action="myform" method="GET">
+          <div>
+            <label for="First-Name"> name :</label>
+            <input
+              type="text"
+              name="firstName"
+              id="First-Name"
+              placeholder="이름"
+            /><br />
+
+            <label for="Last-Name">Last name :</label>
+            <input
+              type="text"
+              name="lastName"
+              id="Last-Name"
+              placeholder="성"
+              required
+            /><br />
+
+            <label for="Age">Age :</label>
+            <input
+              type="number"
+              name="number"
+              id="Age"
+              min="12"
+              max="20"
+              step="1"
+              placeholder="나이"
+              value="18"
+            /><br /><br />
+          </div>
+          <div>
+            <label for="">checkbox1 : </label>
+            <input type="checkbox" name="chk1" /><br />
+            <label for="">checkbox2 : </label>
+            <input type="checkbox" name="chk2" checked /><br />
+            <label for="">radio1 : </label>
+            <input type="radio" name="tip" value="ok1" checked /><br />
+            <label for="">radio2: </label>
+            <input type="radio" name="tip" value="ok2" /><br />
+            <label for="">radio3: </label>
+            <input type="radio" name="map" value="ok3" /><br />
+            <label for="">radio4: </label>
+            <input type="radio" name="map" value="ok4" checked /><br /><br />
+          </div>
+          <div>
+            <label for="">password : </label>
+            <input type="password" /><br />
+            <label for="">date : </label>
+            <input type="date" /><br />
+            <label for="">time : </label>
+            <input type="time" /><br />
+            <label for="">file : </label>
+            <input type="file" />
+            (숨김) : <input type="hidden" name="정보" value="비밀정보" />
+            <br />
+          </div>
+          <br />
+          <div>
+            <hr />
+            <input type="submit" value="보내기" />
+            <input type="reset" value="클리어" />
+            <hr />
+            <button type="submit">제출</button>
+            <button type="reset">초기화</button>
+          </div>
+        </form>
+      </fieldset>
+    </div>
+    <div>
+      <hr />
+      <br />
+      <a href="/index.html">목차로</a>
+    </div>
+  </body>
+</html>

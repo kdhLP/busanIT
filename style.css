@@ -1,0 +1,32 @@
+html,
+body{
+    background-color:bisque;
+    height: 100%;
+}
+@media(max-width : 1200px){
+    body{
+        color: white;
+        background: url(https://th.bing.com/th/id/R.ff887e7786516e91d92be52b0bf299ce?rik=whpLStk4ABd7wQ&riu=http%3a%2f%2fhdwpro.com%2fwp-content%2fuploads%2f2016%2f10%2fBlue-Sky-Image.jpg&ehk=FjI8nzTLqjeQw2cRjQs0kABFQIuFdOejI%2f5dZsab3Hk%3d&risl=&pid=ImgRaw&r=0) no-repeat;
+    background-size: cover;
+    }
+}
+
+h1 {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    }
+
+@media(max-width : 600px){
+    body{
+        color: yellow;
+    background: url(https://e1.pxfuel.com/desktop-wallpaper/286/571/desktop-wallpaper-5-beautiful-beach-phone-backgrounds-for-iphone-android-mobile-lock-screen-beach-mobile.jpg) no-repeat;
+    background-size: cover;
+}
+}
+h1 {
+border-bottom: 1px solid rgb(18, 165, 30);
+padding: 10px;
+}
+span {
+padding: 10px;
+}

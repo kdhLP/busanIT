@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>페이지 구조</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      .wrap {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: rgb(245, 182, 106);
+      }
+      footer,
+      header{
+flex: 2;
+        /* height: 15%; */
+        background-color: lightgreen;
+        text-align: center;
+        font-size: 3rem;
+      }
+      nav{
+        flex: 1;
+        /* height: 7%; */
+        background-color: darkgray;
+      }
+      main{
+        flex: 12;
+        /* height: 100%; */
+        display: flex;
+      }
+      aside,section{
+        /* width: 20%; */
+        flex: 1;
+      }
+      article{
+        /* width: 60%; */
+        background-color: burlywood;
+        flex: 3;
+      }
+      footer{
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div.wrap>header+nav+main+footer -->
+    <div class="wrap">
+      <header>NEVER</header>
+      <nav>nav</nav>
+      <main>
+        <!-- aside+article+section -->
+        <aside>aside</aside>
+        <article>article</article>
+        <section>section</section>
+      </main>
+      <footer>@저작권 어쩌고 저쩌고<br><br><br>
+        <a href="/index.html">목차로</a>
+      </footer>
+    </div>
+  </body>
+</html>

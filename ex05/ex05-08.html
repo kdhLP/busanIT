@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카탈로그</title>
+    <style>
+      h1 {
+        text-align: center;
+        background-color: cadetblue;
+        color: white;
+      }
+      img {
+        width: 100%;
+        height: 55%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      li {
+        margin: 20px;
+        width: 300px;
+        border: 1px solid #222;
+        transition: all 0.5s ease;
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+      }
+      .prod-list {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 0;
+        flex-wrap: wrap;
+      }
+      li:hover {
+        background-color: gainsboro;
+      }
+      ul {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>신상품 목록</h1>
+      <!-- ul.prod-list>(li>img+div.caption>h2{상품$}+p{상품$ 설명텍스트}+p{가격: $1,111원})*9 -->
+      <ul class="prod-list">
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2021/01/29/14/41/wardrobe-5961193_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품1</h2>
+            <p>상품1 설명텍스트</p>
+            <p>가격: 11,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2016/11/21/16/01/clothes-1846128_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품2</h2>
+            <p>상품2 설명텍스트</p>
+            <p>가격: 21,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2014/08/26/21/48/sweatshirts-428607_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품3</h2>
+            <p>상품3 설명텍스트</p>
+            <p>가격: 31,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품4</h2>
+            <p>상품4 설명텍스트</p>
+            <p>가격: 41,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2014/08/26/21/48/shirts-428600_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품5</h2>
+            <p>상품5 설명텍스트</p>
+            <p>가격: 51,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2016/03/26/22/51/down-jackets-1281699_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품6</h2>
+            <p>상품6 설명텍스트</p>
+            <p>가격: 61,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2012/07/29/21/42/dresses-53319_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품7</h2>
+            <p>상품7 설명텍스트</p>
+            <p>가격: 71,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2014/08/26/21/49/sweater-428616_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품8</h2>
+            <p>상품8 설명텍스트</p>
+            <p>가격: 81,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2014/08/26/21/49/shirts-428618_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품9</h2>
+            <p>상품9 설명텍스트</p>
+            <p>가격: 91,111원</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <br />
+    <hr />
+    <br />
+    <a href="/index.html">목차로</a>
+  </body>
+</html>

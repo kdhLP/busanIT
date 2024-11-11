@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상선택자 응용</title>
+    <style>
+      h2 {
+        background-color: darkseagreen;
+        width: 300px;
+        height: 35px;
+        text-align: center;
+        color: white;
+        margin-bottom: 2px;
+      }
+      .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        height: auto;
+        text-align: center;
+        background-color: burlywood;
+      }
+      .wrapper div {
+        width: 30px;
+        height: 30px;
+        border: 1px solid blue;
+        margin: 5px;
+        font-size: 1.1rem;
+      }
+      .empty {
+        border: none;
+        background-color: transparent;
+      }
+      /* 날짜가 있는 칸만 스타일 적용 (empty 제외) */
+      #november div:not(.empty):nth-of-type(7n + 3) {
+        color: red;
+      }
+      #november div:not(.empty):nth-of-type(7n + 2) {
+        color: blue;
+      }
+      #november div:not(.empty):nth-of-type(n + 30) {
+        background-color: darkorchid;
+        color: white;
+      }
+      #november div:not(.empty):nth-of-type(-n + 13) {
+        background-color: darkorange;
+      }
+      #november div:not(.empty):nth-of-type(n + 17):nth-of-type(-n + 20) {
+        color: red;
+        background-color: aqua;
+      }
+      /* 1월 달력의 주말에만 적용 */
+      #january div:not(.empty):nth-of-type(7n) {
+        color: blue;
+      }
+      #january div:not(.empty):nth-of-type(7n + 1) {
+        color: red;
+      }
+      /* 1월 1일부터 4일까지 노란색 배경 */
+      #january div:not(.empty):nth-of-type(n + 4):nth-of-type(-n + 7) {
+        background-color: yellow;
+      }
+      /* 1월 13일부터 16일까지 아쿠아색 배경, 글자색 빨강 */
+      #january div:not(.empty):nth-of-type(n + 16):nth-of-type(-n + 19) {
+        background-color: aqua;
+        color: red;
+      }
+      /* 1월 28일 이후 갈색 배경 */
+      #january div:not(.empty):nth-of-type(n + 31) {
+        background-color: brown;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>2024년 11월 달력</h2>
+    <div class="wrapper" id="november">
+      <!-- 시작일을 맞추기 위해 빈칸 5개 추가 -->
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <!-- 날짜 -->
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+      <div class="box">11</div>
+      <div class="box">12</div>
+      <div class="box">13</div>
+      <div class="box">14</div>
+      <div class="box">15</div>
+      <div class="box">16</div>
+      <div class="box">17</div>
+      <div class="box">18</div>
+      <div class="box">19</div>
+      <div class="box">20</div>
+      <div class="box">21</div>
+      <div class="box">22</div>
+      <div class="box">23</div>
+      <div class="box">24</div>
+      <div class="box">25</div>
+      <div class="box">26</div>
+      <div class="box">27</div>
+      <div class="box">28</div>
+      <div class="box">29</div>
+      <div class="box">30</div>
+    </div>
+
+    <h2>2025년 1월 달력</h2>
+    <div class="wrapper" id="january">
+      <!-- 빈칸 3개로 시작일 맞추기 -->
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <!-- 날짜 -->
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+      <div class="box">11</div>
+      <div class="box">12</div>
+      <div class="box">13</div>
+      <div class="box">14</div>
+      <div class="box">15</div>
+      <div class="box">16</div>
+      <div class="box">17</div>
+      <div class="box">18</div>
+      <div class="box">19</div>
+      <div class="box">20</div>
+      <div class="box">21</div>
+      <div class="box">22</div>
+      <div class="box">23</div>
+      <div class="box">24</div>
+      <div class="box">25</div>
+      <div class="box">26</div>
+      <div class="box">27</div>
+      <div class="box">28</div>
+      <div class="box">29</div>
+      <div class="box">30</div>
+      <div class="box">31</div>
+    </div>
+    <div>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <a href="/index.html">목차로</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>복합 선택자</title>
+    <style>
+      /* div p { color: skyblue; } */
+      /* div > p { color: green; } */
+      /* div + p { background-color: cyan }*/
+    </style>
+  </head>
+  <body>
+    <h1>복합 선택자</h1>
+    <h2>Heading</h2>
+    <!-- div{안녕하세요}>p{child $}*2+span{반가워요}>p{grandchild}^p{어디가세요}^p{neighborhood child} -->
+    <div>
+      안녕하세요
+      <p>child 1</p>
+      <p>child 2</p>
+      <span
+        >반가워요
+        <p>grandchild</p>
+      </span>
+      <p>어디가세요</p>
+    </div>
+    <p>neighborhood child</p>
+    <div>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <a href="/index.html">목차로</a>
+    </div>
+  </body>
+</html>

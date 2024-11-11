@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>레이아웃(float)</title>
+    <style>
+      .box {
+        height: 310px;
+      }
+      header,
+      footer {
+        width: 300px;
+        height: 40px;
+        border: 1px solid #000;
+        background-color: darkseagreen;
+        box-sizing: border-box;
+      }
+      nav {
+        border: 1px solid #000;
+        width: 50px;
+        height: 250px;
+        background-color: honeydew;
+        float: left;
+        box-sizing: border-box;
+      }
+      main {
+        width: 250px;
+        margin-left: 50px;
+      }
+      article {
+        height: 50px;
+        border: 1px solid #000;
+        background-color: cornflowerblue;
+        box-sizing: border-box;
+      }
+      section {
+        border: 1px solid #000;
+        height: 100px;
+        background-color: darkgray;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <header>header</header>
+      <div>
+        <nav>nav</nav>
+        <main>
+          <article>article</article>
+          <section>section1</section>
+          <section>section2</section>
+        </main>
+      </div>
+      <footer>footer</footer>
+    </div>
+    <div>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <a href="/index.html">목차로</a>
+    </div>
+  </body>
+</html>
